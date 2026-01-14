@@ -1,0 +1,45 @@
+{
+  "paths": [
+    {
+      "type": "dir",
+      "name": "Find",
+      "children": [
+        {
+          "type": "file",
+          "value": "Find/Find a word using terminal.md"
+        },
+        {
+          "type": "file",
+          "value": "Find/Find-a-list-of-files-in-a-folder.md"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "value": "How to change iphone HEIF camera settings.md"
+    }
+  ],
+  "contents": [
+    {
+      "path": "Find/Find a word using terminal.md",
+      "url": "Find/Find a word using terminal.html",
+      "content": "z#: 260103095804\n\n## Find a word using terminal\n#terminal #grep\n\nTo find a word or pattern [in a file](https://www.wikihow.com/Find-a-File-in-Linux \"Find a File in Linux\"), use the basic grep syntax:\n\n* `grep \"string of text\" filename`\n\n  * This command returns the full text of each line containing the text string you entered.\n  * If you only want to see the matching words or strings, add the `-o` option.\n\n-i option to ignore case\n\nIf you only want to see a result if it's a word on its own—not within a longer word—use the `-w` option.\n\nIf you want to know how many times certain text appears in a file, use the `-c` option.\n\nTo find lines that contain two specific words or patterns, you can use the pipe symbol to perform a second grep command. For example, let's say you want to find all lines that contain the words \"wikiHow\" and \"Google:\"\n\n* `grep -i \"wikiHow\" filename.txt | grep -i \"Google\"`\n\nAnother way to do this is by using regular expressions and the `-E` option\n* `grep -E \"wikiHow.*Google|Google.*wikiHow\" filename.txt`\nOR\n```\ngrep -E 'wikiHow|Google' filename.txt\n```\n\nTo search for a word across multiple files in the terminal, you can use the `grep` command with the `-r` option for recursive searching. For example, use `grep -r \"search_word\" /path/to/directory/` to find \"search\\_word\" in all files within the specified directory and its subdirectories.\n\nto find all instances of the word \"wikiHow\" in your [Python files](https://www.wikihow.com/Install-Python \"Install Python\"), but not in other files in a directory. \ngrep wikiHow \\*.py\n\nto know the name of each file containing a certain word or series of characters, use the `-l` option.\n```\ngrep -l \"string of text\" /home/myusername\n```\n\n```\n\n* The grep command is case-sensitive, but you can use _grep -i_ to ignore case.\n",
+      "html": "<p>z#: 260103095804</p>\n<h2 id=\"find-a-word-using-terminal\">Find a word using terminal <a class=\"heading-anchor-permalink\" href=\"#find-a-word-using-terminal\">#</a></h2>\n<p>#terminal #grep</p>\n<p>To find a word or pattern <a href=\"https://www.wikihow.com/Find-a-File-in-Linux\" title=\"Find a File in Linux\">in a file</a>, use the basic grep syntax:</p>\n<ul>\n<li>\n<p><code>grep &quot;string of text&quot; filename</code></p>\n<ul>\n<li>This command returns the full text of each line containing the text string you entered.</li>\n<li>If you only want to see the matching words or strings, add the <code>-o</code> option.</li>\n</ul>\n</li>\n</ul>\n<p>-i option to ignore case</p>\n<p>If you only want to see a result if it’s a word on its own—not within a longer word—use the <code>-w</code> option.</p>\n<p>If you want to know how many times certain text appears in a file, use the <code>-c</code> option.</p>\n<p>To find lines that contain two specific words or patterns, you can use the pipe symbol to perform a second grep command. For example, let’s say you want to find all lines that contain the words “wikiHow” and “Google:”</p>\n<ul>\n<li><code>grep -i &quot;wikiHow&quot; filename.txt | grep -i &quot;Google&quot;</code></li>\n</ul>\n<p>Another way to do this is by using regular expressions and the <code>-E</code> option</p>\n<ul>\n<li><code>grep -E &quot;wikiHow.*Google|Google.*wikiHow&quot; filename.txt</code>\nOR</li>\n</ul>\n<pre><code>grep -E 'wikiHow|Google' filename.txt\n</code></pre>\n<p>To search for a word across multiple files in the terminal, you can use the <code>grep</code> command with the <code>-r</code> option for recursive searching. For example, use <code>grep -r &quot;search_word&quot; /path/to/directory/</code> to find “search_word” in all files within the specified directory and its subdirectories.</p>\n<p>to find all instances of the word “wikiHow” in your <a href=\"https://www.wikihow.com/Install-Python\" title=\"Install Python\">Python files</a>, but not in other files in a directory. \ngrep wikiHow *.py</p>\n<p>to know the name of each file containing a certain word or series of characters, use the <code>-l</code> option.</p>\n<pre><code>grep -l &quot;string of text&quot; /home/myusername\n</code></pre>\n<pre><code>\n* The grep command is case-sensitive, but you can use _grep -i_ to ignore case.\n</code></pre>\n",
+      "id": 0
+    },
+    {
+      "path": "Find/Find-a-list-of-files-in-a-folder.md",
+      "url": "Find/Find-a-list-of-files-in-a-folder.html",
+      "content": "---\ndate: 2024-10-25\ntags: hello,world\n---\n\nz#: 260114105213\n\n# Find a list of files in a folder\n#terminal #mac\n\nIf want the full paths of the regular files whose name ends in `.lua` in or under the `/media/username` directory, then you could use the standard `find`.\n\n```bash\nLC_ALL=C find /media/username -name '*.lua' -type f\n```\nRef: https://unix.stackexchange.com/questions/762425/how-can-i-get-a-file-list-recursively",
+      "html": "<hr>\n<h2 id=\"date%3A-2024-10-25tags%3A-hello%2Cworld\">date: 2024-10-25\ntags: hello,world <a class=\"heading-anchor-permalink\" href=\"#date%3A-2024-10-25tags%3A-hello%2Cworld\">#</a></h2>\n<p>z#: 260114105213</p>\n<h1 id=\"find-a-list-of-files-in-a-folder\">Find a list of files in a folder <a class=\"heading-anchor-permalink\" href=\"#find-a-list-of-files-in-a-folder\">#</a></h1>\n<p>#terminal #mac</p>\n<p>If want the full paths of the regular files whose name ends in <code>.lua</code> in or under the <code>/media/username</code> directory, then you could use the standard <code>find</code>.</p>\n<pre><code class=\"language-bash\">LC_ALL=C find /media/username -name '*.lua' -type f\n</code></pre>\n<p>Ref: <a href=\"https://unix.stackexchange.com/questions/762425/how-can-i-get-a-file-list-recursively\">https://unix.stackexchange.com/questions/762425/how-can-i-get-a-file-list-recursively</a></p>\n",
+      "id": 1
+    },
+    {
+      "path": "How to change iphone HEIF camera settings.md",
+      "url": "How to change iphone HEIF camera settings.html",
+      "content": "---\ndate: 2024-10-25\ntags: hello,world\n---\n\nz#: 260106113255\n\n## How to change iphone HEIF camera settings\n\n#iphone #images #camera #heif\n\nTo change your iPhone's HEIF settings, go to Settings > Camera > Formats, and select \"Most Compatible\" to capture photos in JPEG format instead of HEIF. This will ensure that new photos are saved in a more widely compatible format.\n\n",
+      "html": "<hr>\n<h2 id=\"date%3A-2024-10-25tags%3A-hello%2Cworld\">date: 2024-10-25\ntags: hello,world <a class=\"heading-anchor-permalink\" href=\"#date%3A-2024-10-25tags%3A-hello%2Cworld\">#</a></h2>\n<p>z#: 260106113255</p>\n<h2 id=\"how-to-change-iphone-heif-camera-settings\">How to change iphone HEIF camera settings <a class=\"heading-anchor-permalink\" href=\"#how-to-change-iphone-heif-camera-settings\">#</a></h2>\n<p>#iphone #images #camera #heif</p>\n<p>To change your iPhone’s HEIF settings, go to Settings &gt; Camera &gt; Formats, and select “Most Compatible” to capture photos in JPEG format instead of HEIF. This will ensure that new photos are saved in a more widely compatible format.</p>\n",
+      "id": 2
+    }
+  ]
+}
