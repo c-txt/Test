@@ -4,11 +4,6 @@
             <meta charset="UTF-8">
             <title>Navigate to&colon;</title>
             <style>
-/* From extension vscode.github */
-/*---------------------------------------------------------------------------------------------
- *  Copyright (c) Microsoft Corporation. All rights reserved.
- *  Licensed under the MIT License. See License.txt in the project root for license information.
- *--------------------------------------------------------------------------------------------*/
 
 .vscode-dark img[src$=\#gh-light-mode-only],
 .vscode-light img[src$=\#gh-dark-mode-only],
@@ -135,10 +130,19 @@
 }
 
 </style>
-        
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/_pagefind/pagefind-ui.js" type="text/javascript">        
         </head>
         <body class="vscode-body vscode-light">
-            <hr>
+</script>
+<div id="search" class="ml-3 p-4"></div>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ element: '#search' });
+  });
+</script>           
+Search
+ <hr>
 <h2 id="layout-home">layout: home</h2>
 <h1 id="navigate-to">Navigate to:</h1>
 <table>
